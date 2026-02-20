@@ -1,0 +1,143 @@
+/* Page background and typography */
+#account-page {
+    background-color: #f4f4f9;
+    color: var(--text-main);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header section styling */
+.account-header {
+    background: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 2px solid #eee;
+}
+
+.account-header h1 {
+    font-size: 2.2em;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.account-header h1 span {
+    color: var(--primary-color); 
+    font-weight: bold;
+}
+
+/* Task 2.1: Navigation without default bullets */
+.account-nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.account-nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+/* Task 2.2 & 2.3: Link transitions and hover state */
+.account-nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #666;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.account-nav a:hover {
+    color: var(--primary-color);
+}
+
+/* Main container layout */
+.account-main {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 20px; 
+}
+
+.section-title {
+    margin-bottom: 25px;
+    color: var(--primary-color);
+    text-align: left;
+}
+
+/* Order card container */
+.order-expansion {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+}
+
+.order-expansion summary {
+    padding: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+.order-expansion summary:hover {
+    background-color: #fafaff;
+}
+
+.order-content {
+    padding: 25px;
+    border-top: 1px solid #eee;
+    min-height: 200px; 
+    background-color: #fff;
+}
+
+/* Task 5.2: Custom markers for order history list */
+.purchase-history {
+    padding-left: 25px;
+    margin-bottom: 25px;
+}
+
+.purchase-history li::marker {
+    content: "🐾 "; 
+    color: var(--primary-color);
+}
+
+.purchase-history li {
+    padding: 8px 0;
+    border-bottom: 1px ghostwhite solid;
+}
+
+/* Detailed order metadata styling */
+.order-meta {
+    padding: 20px;
+    background: #f9f9fb;
+    border-radius: 10px;
+    display: block;
+    overflow: hidden;
+}
+
+.order-meta dt {
+    font-weight: bold;
+    font-size: 0.75em;
+    color: #999;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.order-meta dd {
+    margin-left: 0;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* Task 4.2: Automatic currency symbol before price */
+.price::before {
+    content: "₱";
+    font-weight: bold;
+}
