@@ -1,0 +1,114 @@
+/* Page background and general text color */
+#checkout-page {
+    background-color: #f9f9fb;
+    color: #333;
+}
+
+#checkout-page header {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 2px solid #eee;
+}
+
+/* Layout container using block and overflow for floats */
+.checkout-layout {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: block;
+    overflow: auto; 
+}
+
+/* Form section layout */
+.form-container {
+    float: left;
+    width: 60%;
+    box-sizing: border-box;
+    padding-right: 40px;
+}
+
+/* Order summary sidebar styling */
+.summary-sidebar {
+    float: right;
+    width: 35%;
+    box-sizing: border-box;
+    padding: 25px;
+    background: white;
+    border: 2px solid #D1C4E9; 
+    border-radius: 12px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+}
+
+/* Grouping form elements */
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background: white;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--primary-color);
+    padding: 0 10px;
+}
+
+/* Standard input styling */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    display: block;
+    box-sizing: border-box; 
+}
+
+/* Task 4.3: Validation for required and valid fields */
+input:required {
+    border-left: 8px solid #D1C4E9;
+}
+
+input:valid {
+    border-left: 8px solid var(--valid-green);
+}
+
+/* Summary row alignment */
+.summary-row {
+    margin: 15px 0;
+    display: block;
+    clear: both;
+}
+
+.summary-row .price {
+    float: right; 
+}
+
+/* Task 4.2: Automatic currency symbol */
+.price::before {
+    content: "₱";
+    font-weight: bold;
+}
+
+/* Task 2.2 & 2.3: Button states and hover effect */
+.place-order-btn {
+    width: 100%;
+    padding: 18px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+.place-order-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
